@@ -11,7 +11,7 @@ ninja.data = [{
     },
   },{id: "nav-publications",
           title: "Publications",
-          description: "automatically generated publication list from NASA&#39;s ADS service, powered by jekyll-scholar.",
+          description: "automatically generated publication list from NASA&#39;s ADS service, powered by jekyll-scholar. You can directly check the list of publications on NASA&#39;s ADS service here.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";

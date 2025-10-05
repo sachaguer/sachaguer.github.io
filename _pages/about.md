@@ -1,34 +1,26 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: PhD Student in observational cosmology @ <a href="https://cosmostat.org">CosmoStat</a>, CEA Paris-Saclay.
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
-
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+  address: >
+    <p><small><i class="fab fa-github"></i> <a href="https://github.com/sachaguer"> @sachaguer</a></small></p>
+    <p><small><i class="fas fa-envelope"></i> <a href="mailto:sacha.guerrini@cea.fr">sacha.guerrini@cea.fr</a></small></p>
 
 announcements:
-  enabled: true # includes a list of news items
+  enabled: true # includes the latest news from the _news folder
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
 
-latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+selected_papers: true # includes a list of papers marked as "selected={true}"
+social: true # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+**I am a PhD student in observational cosmology using weak gravitational lensing to constrain the growth of structures in the Universe.** I am interested in statistical inference methods to extract more information from the cosmological data such as [Implicit Likelihood Inference](https://sbi.readthedocs.io/en/latest/).
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+I am involved in the analysis of data from the Ultraviolet Near-Infrared Optical Northern Survey ([UNIONS](https://www.skysurvey.cc/)), a collaboration between the Canada-France-Hawaii Telescope (CFHT), Pan-STARS, and the Subaru Telescope to image 5000 deg² of the northern sky in four bands ($u$, $g$, $r$, $i$, $z$). I am also a member of the [*Euclid* Consortium](https://www.euclid-ec.org/), a space mission from the European Space Agency ([ESA](https://www.esa.int/Science_Exploration/Space_Science/Euclid)) that will map the geometry of the dark Universe. In both collaboration, I contribute to the development of validation tests on the weak lensing measurement and participate in.

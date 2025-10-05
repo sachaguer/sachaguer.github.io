@@ -40,8 +40,7 @@ jobs:
         env:
           ADS_API_KEY: ${{ secrets.ADS_API_KEY }}
         run: |
-          cd scripts
-          python bibgen.py
+          python scripts/bibgen.py
 
       - name: Check for changes 🔍
         id: verify-changed-files

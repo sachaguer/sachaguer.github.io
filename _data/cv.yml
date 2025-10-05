@@ -49,6 +49,16 @@
       year: 2019-2023
       description:
         - Ingénieur Polytechnicien program (X2019)
+
+- title: Collaborations
+  type: list
+  contents:
+    - title: UNIONS Collaboration
+      description: |
+        a wide-field, ground based sky survey in the northern hemisphere. Contributed to the construction of the galaxy catalogue for weak lensing.
+    - title: "*Euclid* Consortium"
+      description: |
+        a space mission of the European Space Agency to map the geometry of the dark Universe. I am involved in the validation of the shape measurement of galaxies for weak lensing analysis.
 # - title: Open Source Projects
 #   type: time_table
 #   contents:

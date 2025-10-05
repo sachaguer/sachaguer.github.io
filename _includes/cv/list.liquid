@@ -1,5 +1,18 @@
 <ul class="card-text font-weight-light list-group list-group-flush">
   {% for content in entry.contents %}
-    <li class="list-group-item">{{ content }}</li>
+    <li class="list-group-item">
+      {% if content.title %}
+        {% if content.href %}
+          <strong><a href="{{ content.href }}" target="_blank" rel="noopener noreferrer">{{ content.title | markdownify | remove: '<p>' | remove: '</p>' }}</a></strong>
+        {% else %}
+          <strong>{{ content.title | markdownify | remove: '<p>' | remove: '</p>' }}</strong>
+        {% endif %}
+        {% if content.description %}
+          <br>{{ content.description | markdownify | remove: '<p>' | remove: '</p>' }}
+        {% endif %}
+      {% else %}
+        {{ content }}
+      {% endif %}
+    </li>
   {% endfor %}
 </ul>

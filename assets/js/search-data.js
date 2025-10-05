@@ -16,13 +16,6 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "nav-talks",
-          title: "Talks",
-          description: "My talks and presentations",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/https:/sachaguer.github.io/talks/";
-          },
         },{id: "nav-projects",
           title: "Projects",
           description: "🚧 This section is under construction 🚧",

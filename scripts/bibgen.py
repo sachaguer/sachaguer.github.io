@@ -96,7 +96,7 @@ bibtex_query = bibtex_query[:-1]
 # Retrieving the full bibtex entries
 r = requests.post('https://api.adsabs.harvard.edu/v1/export/bibtexabs', 
                  data='{"bibcode":[%s]}'%bibtex_query,
-                 headers={"Authorization":"Bearer 3QIMn4lO1ovg0pF1IQFkiILhElJiYLs0sLB9oWPS",
+                 headers={"Authorization":"Bearer "+api_key,
                           "Content-Type": "application/json"})
 result = r.json()['export']
 # Parse it with bibtexparser

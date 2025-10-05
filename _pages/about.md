@@ -8,7 +8,7 @@ profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
-  address: >
+  more_info: >
     <p><small><i class="fab fa-github"></i> <a href="https://github.com/sachaguer"> @sachaguer</a></small></p>
     <p><small><i class="fas fa-envelope"></i> <a href="mailto:sacha.guerrini@cea.fr">sacha.guerrini@cea.fr</a></small></p>
 

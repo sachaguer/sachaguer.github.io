@@ -86,8 +86,30 @@ with open('_data/custom_bib.yml', 'r') as f:
 encoded_query='q=author:Guerrini,Sacha&fq=database:astronomy&fl=bibcode&rows=1000&sort=date+desc'
 r = requests.get('https://api.adsabs.harvard.edu/v1/search/query?'+encoded_query,
                  headers={"Authorization":"Bearer "+api_key,})
+
+# Check if the request was successful
+if r.status_code != 200:
+    print(f"❌ ADS API search request failed with status code: {r.status_code}")
+    print(f"Response: {r.text}")
+    exit(1)
+
 soup = BeautifulSoup(r.content, 'html.parser')
-bibcodes = json.loads(soup.contents[0])['response']['docs']
+response_text = soup.contents[0] if soup.contents else ""
+
+# Debug: print the raw response
+print(f"📝 Raw ADS API response: {response_text[:200]}...")
+
+try:
+    response_data = json.loads(response_text)
+    if 'response' not in response_data or 'docs' not in response_data['response']:
+        print(f"❌ Unexpected API response structure: {response_data}")
+        exit(1)
+    bibcodes = response_data['response']['docs']
+    print(f"✅ Found {len(bibcodes)} publications")
+except json.JSONDecodeError as e:
+    print(f"❌ Failed to parse JSON response: {e}")
+    print(f"Raw response: {response_text}")
+    exit(1)
 bibtex_query = ""
 for entry in bibcodes:
   bibtex_query += '"%s",'%entry['bibcode']
@@ -98,7 +120,24 @@ r = requests.post('https://api.adsabs.harvard.edu/v1/export/bibtexabs',
                  data='{"bibcode":[%s]}'%bibtex_query,
                  headers={"Authorization":"Bearer "+api_key,
                           "Content-Type": "application/json"})
-result = r.json()['export']
+
+# Check if the export request was successful
+if r.status_code != 200:
+    print(f"❌ ADS API export request failed with status code: {r.status_code}")
+    print(f"Response: {r.text}")
+    exit(1)
+
+try:
+    export_data = r.json()
+    if 'export' not in export_data:
+        print(f"❌ Unexpected export response structure: {export_data}")
+        exit(1)
+    result = export_data['export']
+    print(f"✅ Successfully retrieved bibtex data")
+except json.JSONDecodeError as e:
+    print(f"❌ Failed to parse export JSON response: {e}")
+    print(f"Raw response: {r.text}")
+    exit(1)
 # Parse it with bibtexparser
 bibtex_database = bibtexparser.loads(result)
 

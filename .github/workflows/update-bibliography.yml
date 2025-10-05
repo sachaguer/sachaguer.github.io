@@ -40,6 +40,13 @@ jobs:
         env:
           ADS_API_KEY: ${{ secrets.ADS_API_KEY }}
         run: |
+          # Check if ADS_API_KEY is set
+          if [ -z "$ADS_API_KEY" ]; then
+            echo "❌ Error: ADS_API_KEY secret is not set!"
+            echo "Please add your ADS API key as a repository secret named 'ADS_API_KEY'"
+            exit 1
+          fi
+          echo "✅ ADS_API_KEY is configured"
           python scripts/bibgen.py
 
       - name: Check for changes 🔍

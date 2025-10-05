@@ -1,12 +1,59 @@
+# Minified and generated files
 **/*.map
 **/*.min.css
 **/*.min.js
+
+# Build output
+_site/
+.jekyll-cache/
+
+# Dependencies
+node_modules/
+vendor/
+
+# Generated files
+package-lock.json
+Gemfile.lock
+
+# Problematic Liquid template files
+_includes/head.liquid
+_includes/newsletter.liquid
+
+# External themes and libraries
 assets/css/main.scss
+assets/css/jekyll-pygments-themes-*.css
 assets/js/distillpub/template.v2.js
 assets/js/search/*.js
-assets/plotly/demo.html
-lighthouse_results/**
-_posts/2015-10-20-math.md
 _sass/font-awesome/*.scss
 _sass/tabler-icons/*.scss
+
+# Third-party assets
+assets/plotly/demo.html
+README_files/
+
+# Scripts
 _scripts/*
+
+# Test results
+lighthouse_results/**
+
+# Problematic posts
+_posts/2015-10-20-math.md
+
+# Binary and media files
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.webp
+*.svg
+*.ico
+*.pdf
+*.woff
+*.woff2
+*.ttf
+*.eot
+
+# Jekyll and Ruby files
+.sass-cache/
+.jekyll-metadata

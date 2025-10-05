@@ -1,0 +1,4 @@
+- name: Talks
+  url: https://sachaguer.github.io/talks/
+  external: true
+  order: 2

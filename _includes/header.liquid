@@ -117,6 +117,25 @@
               {% endif %}
             {% endif %}
           {% endfor %}
+          
+          <!-- Custom navigation items from _data/navigation.yml -->
+          {% if site.data.navigation %}
+            {% assign sorted_nav = site.data.navigation | sort: 'order' %}
+            {% for nav_item in sorted_nav %}
+              <li class="nav-item">
+                {% if nav_item.external %}
+                  <a class="nav-link" href="{{ nav_item.url }}" target="_blank" rel="noopener">
+                    {{- nav_item.name -}}
+                  </a>
+                {% else %}
+                  <a class="nav-link" href="{{ nav_item.url | relative_url }}">
+                    {{- nav_item.name -}}
+                  </a>
+                {% endif %}
+              </li>
+            {% endfor %}
+          {% endif %}
+          
           {% if site.search_enabled %}
             <!-- Search -->
             <li class="nav-item">

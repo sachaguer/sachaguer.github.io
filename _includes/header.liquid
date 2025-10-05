@@ -117,7 +117,7 @@
               {% endif %}
             {% endif %}
           {% endfor %}
-          
+
           <!-- Custom navigation items from _data/navigation.yml -->
           {% if site.data.navigation %}
             {% assign sorted_nav = site.data.navigation | sort: 'order' %}
@@ -135,7 +135,7 @@
               </li>
             {% endfor %}
           {% endif %}
-          
+
           {% if site.search_enabled %}
             <!-- Search -->
             <li class="nav-item">

@@ -74,7 +74,8 @@ abbrev_map = {'Astronomy and Astrophysics': 'A&A',
               'Astronomy and Computing': 'Astron. Comput.',
             #   'arXiv e-prints': 'arXiv',
               'Nature Reviews Physics': 'Nat. Rev. Phys',
-              'The Open Journal of Astrophysics':'OJAp'}
+              'The Open Journal of Astrophysics':'OJAp',
+              'Physical Review D': 'Phys. Rev. D',}
 
 api_key = os.environ['ADS_API_KEY']
 

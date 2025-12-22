@@ -39,7 +39,7 @@ ninja.data = [{
           },
         },{id: "nav-teaching",
           title: "Teaching",
-          description: "🚧 This page is still under construction 🚧",
+          description: "A collection of notebooks and pages related to my teaching activity at *Université Paris Cité*",
           section: "Navigation",
           handler: () => {
             window.location.href = "/teaching/";
@@ -415,7 +415,12 @@ ninja.data = [{
             },},{id: "news-loudspeaker-i-am-starting-my-3rd-year-of-phd-i-am-looking-for-a-postdoctoral-position-in-cosmology-please-get-in-touch-if-you-have-any-opportunity-and-my-profile-is-of-interest-wave",
           title: ':loudspeaker: I am starting my 3rd year of PhD. I am looking for...',
           description: "",
-          section: "News",},{
+          section: "News",},{id: "teaching-buffon-39-s-needle-problem",
+          title: 'Buffon&amp;#39;s needle problem',
+          description: "A notebook solving Buffon&#39;s needle problem with a simulator and illustrating the Central Limit theorem.",
+          section: "Teaching",handler: () => {
+              window.location.href = "/teaching/1_aiguille_alatoire/";
+            },},{
         id: 'social-email',
         title: 'email',
         section: 'Socials',

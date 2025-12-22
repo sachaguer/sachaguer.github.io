@@ -18,7 +18,7 @@ ninja.data = [{
           },
         },{id: "nav-projects",
           title: "Projects",
-          description: "🚧 This section is under construction 🚧",
+          description: "This section contains tutorial or projects related or not to my research. Have fun exploring them.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
@@ -39,7 +39,7 @@ ninja.data = [{
           },
         },{id: "nav-teaching",
           title: "Teaching",
-          description: "A collection of notebooks and pages related to my teaching activity at *Université Paris Cité*",
+          description: "A collection of notebooks and pages related to my teaching activity at Université Paris Cité.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/teaching/";
@@ -415,7 +415,12 @@ ninja.data = [{
             },},{id: "news-loudspeaker-i-am-starting-my-3rd-year-of-phd-i-am-looking-for-a-postdoctoral-position-in-cosmology-please-get-in-touch-if-you-have-any-opportunity-and-my-profile-is-of-interest-wave",
           title: ':loudspeaker: I am starting my 3rd year of PhD. I am looking for...',
           description: "",
-          section: "News",},{id: "teaching-buffon-39-s-needle-problem",
+          section: "News",},{id: "projects-tutorial-sbi",
+          title: 'Tutorial SBI',
+          description: "A tutorial on Simulation-Based Inference",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/1_1mois_1labo_tuto_sbi/";
+            },},{id: "teaching-buffon-39-s-needle-problem",
           title: 'Buffon&amp;#39;s needle problem',
           description: "A notebook solving Buffon&#39;s needle problem with a simulator and illustrating the Central Limit theorem.",
           section: "Teaching",handler: () => {

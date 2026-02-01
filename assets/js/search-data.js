@@ -425,6 +425,11 @@ ninja.data = [{
           description: "A notebook solving Buffon&#39;s needle problem with a simulator and illustrating the Central Limit theorem.",
           section: "Teaching",handler: () => {
               window.location.href = "/teaching/1_aiguille_alatoire/";
+            },},{id: "teaching-jumble-on-elementary-probability-theory",
+          title: 'Jumble on elementary probability theory',
+          description: "A notebook with visualisations of elementary principles in probability theory",
+          section: "Teaching",handler: () => {
+              window.location.href = "/teaching/2_pele_mele/";
             },},{
         id: 'social-email',
         title: 'email',

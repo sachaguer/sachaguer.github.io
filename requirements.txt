@@ -1,5 +1,5 @@
 nbconvert
 requests
-bibtexparser
+bibtexparser<2.0
 beautifulsoup4
 pyyaml

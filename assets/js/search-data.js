@@ -421,6 +421,12 @@ ninja.data = [{
           section: "News",},{id: "news-the-first-euclid-cosmic-shear-measurement-has-been-submitted-on-the-arxiv-after-the-ec-internal-review-this-is-the-first-shear-measurement-catalogue-obtained-with-lensmc-in-anticipation-of-the-first-euclid-data-release-coming-up-next-summer",
           title: '📝 The first Euclid cosmic shear measurement has been submitted on the ArXiv...',
           description: "",
+          section: "News",},{id: "news-i-am-happy-to-announce-that-i-obtained-my-phd-after-defending-my-thesis-named-statistical-analysis-of-weak-lensing-for-euclid",
+          title: '🎓 I am happy to announce that I obtained my PhD after defending...',
+          description: "",
+          section: "News",},{id: "news-a-study-of-the-impact-of-baryonic-feedback-on-higher-order-statistics-weak-lensing-analysis-has-been-submitted-to-the-arxiv-by-andreas-tersenov-the-results-have-been-obtained-using-jaxili",
+          title: '📝 A study of the impact of baryonic feedback on higher-order statistics weak...',
+          description: "",
           section: "News",},{id: "projects-tutorial-sbi",
           title: 'Tutorial SBI',
           description: "A tutorial on Simulation-Based Inference",
@@ -441,7 +447,7 @@ ninja.data = [{
         title: 'email',
         section: 'Socials',
         handler: () => {
-          window.open("mailto:%73%61%63%68%61.%67%75%65%72%72%69%6E%69@%63%65%61.%66%72", "_blank");
+          window.open("mailto:%73%61%63%68%61.%67%75%65%72%72%69%6E%69@%75-%70%61%72%69%73.%66%72", "_blank");
         },
       },{
         id: 'social-github',
@@ -456,6 +462,13 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("https://inspirehep.net/authors/2701010", "_blank");
+        },
+      },{
+        id: 'social-orcid',
+        title: 'ORCID',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://orcid.org/0009-0004-3655-4870", "_blank");
         },
       },{
         id: 'social-scholar',

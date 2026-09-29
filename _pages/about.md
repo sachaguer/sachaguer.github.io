@@ -10,7 +10,7 @@ profile:
   image_circular: false # crops the image to make it circular
   more_info: >
     <p><small><i class="fab fa-github"></i> <a href="https://github.com/sachaguer"> @sachaguer</a></small></p>
-    <p><small><i class="fas fa-envelope"></i> <a href="mailto:sacha.guerrini@u-paris.fr">sacha.guerrini@u-paris.fr</a></small></p>
+    <p><small><i class="fas fa-envelope"></i> <a href="mailto:sacha.guerrini@icc.ub.edu">sacha.guerrini@icc.ub.edu</a></small></p>
 
 announcements:
   enabled: true # includes the latest news from the _news folder

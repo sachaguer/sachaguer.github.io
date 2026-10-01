@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: PhD Student in observational cosmology @ <a href="https://cosmostat.org">CosmoStat</a>, CEA Paris-Saclay.
+subtitle: Postdoctoral researcher in observational cosmology @ <a href="https://icc.ub edu>ICCUB</a>, Universitat de Barcelona
 
 profile:
   align: right
@@ -21,6 +21,12 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-**I am a PhD student in observational cosmology using weak gravitational lensing to constrain the growth of structures in the Universe.** I am interested in statistical inference methods to extract more information from the cosmological data such as [Implicit Likelihood Inference](https://sbi.readthedocs.io/en/latest/).
+**I am a Postdoctoral researcher in observational cosmology using gravitational lensing to constrain cosmological models of the Universe.** 
 
-I am involved in the analysis of data from the Ultraviolet Near-Infrared Optical Northern Survey ([UNIONS](https://www.skysurvey.cc/)), a collaboration between the Canada-France-Hawaii Telescope (CFHT), Pan-STARS, and the Subaru Telescope to image 5000 deg² of the northern sky in four bands ($u$, $g$, $r$, $i$, $z$). I am also a member of the [_Euclid_ Consortium](https://www.euclid-ec.org/), a space mission from the European Space Agency ([ESA](https://www.esa.int/Science_Exploration/Space_Science/Euclid)) that will map the geometry of the dark Universe. In both collaboration, I contribute to the development of validation tests on the weak lensing measurement and participate in.
+I will soon join the ICCUB and the RedH0t project to constrain the expansion rate of the Universe, $H_0$, using strong gravitational lensing time-delay.
+
+I obtained my PhD focusing on the use of weak gravitational lensing to constrain the growth of structures and the equation of state of dark energy.
+
+I am also interested in statistical inference methods to extract more information from the cosmological data such as [Implicit Likelihood Inference](https://sbi.readthedocs.io/en/latest/).
+
+in that context, I am involved in the analysis of data from the Ultraviolet Near-Infrared Optical Northern Survey ([UNIONS](https://www.skysurvey.cc/)), a collaboration between the Canada-France-Hawaii Telescope (CFHT), Pan-STARS, and the Subaru Telescope to image 5000 deg² of the northern sky in four bands ($u$, $g$, $r$, $i$, $z$). I am also a member of the [_Euclid_ Consortium](https://www.euclid-ec.org/), a space mission from the European Space Agency ([ESA](https://www.esa.int/Science_Exploration/Space_Science/Euclid)) that will map the geometry of the dark Universe. In both collaboration, I contribute to the development of validation tests on the weak lensing measurement and use this measurement to constrain cosmology.

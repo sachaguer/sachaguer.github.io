@@ -2,14 +2,14 @@
 layout: about
 title: About
 permalink: /
-subtitle: Postdoctoral researcher in observational cosmology @ <a href="https://icc.ub edu>ICCUB</a>, Universitat de Barcelona
+subtitle: Postdoctoral researcher in observational cosmology @ <a href="https://icc.ub.edu>ICCUB</a>, Universitat de Barcelona
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p><small><i class="fab fa-github"></i> <a href="https://github.com/sachaguer"> @sachaguer</a></small></p>
+    <p><small><i class="fab fa-github"></i> <a href="https://github.com/sachaguer">@sachaguer</a></small></p>
     <p><small><i class="fas fa-envelope"></i> <a href="mailto:sacha.guerrini@icc.ub.edu">sacha.guerrini@icc.ub.edu</a></small></p>
 
 announcements:
@@ -21,7 +21,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-**I am a Postdoctoral researcher in observational cosmology using gravitational lensing to constrain cosmological models of the Universe.** 
+**I am a Postdoctoral researcher in observational cosmology using gravitational lensing to constrain cosmological models of the Universe.**
 
 I will soon join the ICCUB and the RedH0t project to constrain the expansion rate of the Universe, $H_0$, using strong gravitational lensing time-delay.
 

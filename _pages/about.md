@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Postdoctoral researcher in observational cosmology @ <a href="https://icc.ub.edu>ICCUB</a>, Universitat de Barcelona
+subtitle: Postdoctoral researcher in observational cosmology @ <a href="https://icc.ub.edu">ICCUB</a>, Universitat de Barcelona
 
 profile:
   align: right

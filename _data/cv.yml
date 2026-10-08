@@ -1,10 +1,17 @@
 - title: Research Experience
   type: time_table
   contents:
+    - title: Postdoctoral Researcher
+      institution: ICC-UB Institute of Cosmos Sciences, University of Barcelona
+      location: Barcelona, Spain
+      year: Nov. 2026- Now
+      description:
+        - "Advisor: Prof. Frederic Courbin (ERC project RedH0t)"
+        - "Research topics: strong gravitation lensing, time-delay cosmography, Hubble tension"
     - title: Ph.D. Student in Astrophysics
       institution: Université Paris Cité, CEA Paris-Saclay
       location: Gif-sur-Yvette, France
-      year: 2023-now
+      year: Oct. 2023- Oct. 2026
       description:
         - "Advisor: Dr. Martin Kilbinger"
         - "Research topics: weak gravitational lensing, Bayesian statistics"

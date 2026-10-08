@@ -47,6 +47,27 @@ p.location {
   white-space: nowrap;
 }
 
+.cv-date-column {
+  flex: 0 0 145px;
+  max-width: 145px;
+  text-align: left !important;
+}
+
+.cv-date-content {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.cv-date-column .table-cv {
+  width: auto;
+}
+
+.cv-date-badge {
+  display: inline-block;
+  width: auto;
+  white-space: nowrap;
+}
+
 i.iconlocation {
   color: var(--global-theme-color);
   font-size: 0.8rem;
@@ -66,6 +87,13 @@ i.icondepartment {
 
 table.institution {
   margin-bottom: 1rem;
+}
+
+@media (max-width: 575.98px) {
+  .cv-date-column {
+    flex-basis: 125px;
+    max-width: 125px;
+  }
 }
 
 td.department {

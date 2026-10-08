@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Postdoctoral researcher in observational cosmology @ <a href="https://icc.ub.edu">ICCUB</a>, Universitat de Barcelona
+subtitle: Postdoctoral researcher in observational cosmology @ <a href="https://icc.ub.edu">ICC-UB</a>, Universitat de Barcelona
 
 profile:
   align: right
@@ -23,7 +23,7 @@ social: true # includes social icons at the bottom of the page
 
 **I am a Postdoctoral researcher in observational cosmology using gravitational lensing to constrain cosmological models of the Universe.**
 
-I will soon join the ICCUB and the RedH0t project to constrain the expansion rate of the Universe, $H_0$, using strong gravitational lensing time-delay.
+I will soon join the ICC-UB and the RedH0t project to constrain the expansion rate of the Universe, $H_0$, using strong gravitational lensing time-delay.
 
 I obtained my PhD focusing on the use of weak gravitational lensing to constrain the growth of structures and the equation of state of dark energy.
 

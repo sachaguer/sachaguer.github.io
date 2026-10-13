@@ -38,15 +38,15 @@ jobs:
 
       - name: Run bibliography generator 📚
         env:
-          ADS_API_KEY: ${{ secrets.ADS_API_KEY }}
+          SCIX_API_KEY: ${{ secrets.SCIX_API_KEY }}
         run: |
-          # Check if ADS_API_KEY is set
-          if [ -z "$ADS_API_KEY" ]; then
-            echo "❌ Error: ADS_API_KEY secret is not set!"
-            echo "Please add your ADS API key as a repository secret named 'ADS_API_KEY'"
+          # Check if SCIX_API_KEY is set
+          if [ -z "$SCIX_API_KEY" ]; then
+            echo "❌ Error: SCIX_API_KEY secret is not set!"
+            echo "Please add your SCIX API key as a repository secret named 'SCIX_API_KEY'"
             exit 1
           fi
-          echo "✅ ADS_API_KEY is configured"
+          echo "✅ SCIX_API_KEY is configured"
           python scripts/bibgen.py
 
       - name: Check for changes 🔍
@@ -64,7 +64,7 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add _bibliography/papers.bib
-          git commit -m "📚 Auto-update bibliography from ADS" -m "Updated bibliography with latest publications from ADS API"
+          git commit -m "📚 Auto-update bibliography from SCIX" -m "Updated bibliography with latest publications from SCIX API"
           git push
 
       - name: Trigger deployment 🚀

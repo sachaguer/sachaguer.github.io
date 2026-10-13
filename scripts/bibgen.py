@@ -76,8 +76,7 @@ abbrev_map = {'Astronomy and Astrophysics': 'A&A',
               'Nature Reviews Physics': 'Nat. Rev. Phys',
               'The Open Journal of Astrophysics':'OJAp',
               'Physical Review D': 'Phys. Rev. D',}
-
-api_key = os.environ['ADS_API_KEY']
+api_key = os.environ['SCIX_API_KEY']
 
 # Loading the customizations
 with open('_data/custom_bib.yml', 'r') as f:
@@ -85,12 +84,12 @@ with open('_data/custom_bib.yml', 'r') as f:
 
 # Getting all bibcodes
 encoded_query='q=author:Guerrini,Sacha&fq=database:astronomy&fl=bibcode&rows=1000&sort=date+desc'
-r = requests.get('https://api.adsabs.harvard.edu/v1/search/query?'+encoded_query,
+r = requests.get('https://scixplorer.org/v1/search/query?'+encoded_query,
                  headers={"Authorization":"Bearer "+api_key,})
 
 # Check if the request was successful
 if r.status_code != 200:
-    print(f"❌ ADS API search request failed with status code: {r.status_code}")
+    print(f"❌ SCIX API search request failed with status code: {r.status_code}")
     print(f"Response: {r.text}")
     exit(1)
 
@@ -98,7 +97,7 @@ soup = BeautifulSoup(r.content, 'html.parser')
 response_text = soup.contents[0] if soup.contents else ""
 
 # Debug: print the raw response
-print(f"📝 Raw ADS API response: {response_text[:200]}...")
+print(f"📝 Raw SCIX API response: {response_text[:200]}...")
 
 try:
     response_data = json.loads(response_text)
@@ -117,14 +116,14 @@ for entry in bibcodes:
 bibtex_query = bibtex_query[:-1]
 
 # Retrieving the full bibtex entries
-r = requests.post('https://api.adsabs.harvard.edu/v1/export/bibtexabs', 
+r = requests.post('https://scixplorer.org/v1/export/bibtexabs', 
                  data='{"bibcode":[%s]}'%bibtex_query,
                  headers={"Authorization":"Bearer "+api_key,
                           "Content-Type": "application/json"})
 
 # Check if the export request was successful
 if r.status_code != 200:
-    print(f"❌ ADS API export request failed with status code: {r.status_code}")
+    print(f"❌ SCIX API export request failed with status code: {r.status_code}")
     print(f"Response: {r.text}")
     exit(1)
 
